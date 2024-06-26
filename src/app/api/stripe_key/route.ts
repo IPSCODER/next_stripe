@@ -4,7 +4,7 @@ import stripe from "stripe";
 const stripeSecretKey = "sk_test_51Nnz1ASDTdclJtfgBhdXYXT5FiSJcqVu4sMJyFt3olCg6AYVUdFIzLLkOefULbw5XKeFtOVQXC6ziWsdGyLfUWsT00VWW2utEc";
 
 // Initialize Stripe with your secret key
-const stripeInstance = stripe(stripeSecretKey, {
+const stripeInstance = new stripe(stripeSecretKey, {
   apiVersion: "2022-08-01",
 });
 
