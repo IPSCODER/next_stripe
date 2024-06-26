@@ -7,7 +7,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
 
 function Payment() {
-  const [stripePromise, setStripePromise] = useState(null);
+  const [stripePromise, setStripePromise] = useState<any>(null);
   const [clientSecret, setClientSecret] = useState("");
 
   useEffect(() => {
